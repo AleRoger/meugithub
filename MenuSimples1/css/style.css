@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font: 14px sans-serif;
+}
+.menu{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    background-color: #ff00ff;
+    display: table;    
+}
+.menu ul{
+    text-align: center;
+}
+.menu li{
+    float: left;
+    border-right: 1px solid blue;
+}
+.menu a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+.menu .menu-mobile{
+    display: none;
+}
+@media (max-width: 600px){
+    .menu ul{display: block;}
+    .menu .menu-mobile{display: block;}
+    .menu li{float: none;}
+}
